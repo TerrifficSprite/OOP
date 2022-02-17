@@ -1,7 +1,5 @@
 package lab_1;
-
 import library.MyLibrary;
-
 import java.util.Arrays;
 import java.util.Random;
 

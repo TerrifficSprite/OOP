@@ -1,6 +1,4 @@
-package lab_1;
-
-import library.MyLibrary;
+package lab_1;import library.MyLibrary;
 
 public class Ex_2 {
     private static final int MIN = 1, MAX = 6;
@@ -18,10 +16,8 @@ public class Ex_2 {
             cur += step;
             cur = (float) Math.round(cur * 100) / 100;
         }
-
         System.out.println("Виконано циклом While");
     }
-
     public static void calculateDoWhileMethod(int min, int max, float step) {
         float cur = min;
         System.out.println("Результати обчислення функцiї y=lg(x) \n" +
@@ -35,11 +31,9 @@ public class Ex_2 {
         } while (cur <= max);
         System.out.println("Виконано циклом Do-While");
     }
-
     public static float calculateY(float x) {
         return (float) Math.log(x);
     }
-
     public static void main(String[] args) {
         while (true){
             int menuChoice = lib.soutMenu("""
@@ -56,8 +50,6 @@ public class Ex_2 {
                 calculateDoWhileMethod(MIN, MAX, DX);
             else if(menuChoice != 1)
                 continue;
-            /* Початок обчислень */
-            /* Кінець обчислень */
         }
     }
 }

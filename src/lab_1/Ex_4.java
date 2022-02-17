@@ -1,13 +1,9 @@
 package lab_1;
-
 import library.MyLibrary;
-
-import java.util.Arrays;
 import java.util.Random;
 
 public class Ex_4 {
     static MyLibrary lib = new MyLibrary();
-
     private static void print_arr(int[][] array, int m, int n, String text) {
         System.out.println(text);
         for (int i = 0; i < m; i++) {
