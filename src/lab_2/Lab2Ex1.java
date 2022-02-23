@@ -1,43 +1,46 @@
 package lab_2;
-
 import library.MyLibrary;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class Lab_2_ex_1 {
-    static MyLibrary lib = new MyLibrary();
-    static boolean flag = false;
+public class Lab2Ex1 extends FileWork {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (true){
+        boolean flag = false;
+
+        while (true) {
             List<String> strings = new ArrayList<>();
-            int choice = lib.soutMenu("""
+            int choice = MyLibrary.soutMenu("""
                     ************************
                     \t\tМеню
                     Перейти до обчислень - 1
-                    Вийти - 2 """);
-            switch (choice){
+                    Вийти - 2""");
+            switch (choice) {
                 case 1:
                     System.out.print("Введіть текст: ");
                     String str = scanner.nextLine();
-                    String[] splitted_text = str.split("");
+                    String[] splittedText = str.split("");
                     int counter = 0;
-                    for (String ch: splitted_text) {
-                        if (Pattern.matches("[0-9]", ch))
+                    for (String ch: splittedText) {
+                        if (Pattern.matches("[0-9]", ch)) {
                             counter++;
+                        }
                     }
                     System.out.println("Кількість чисел в тексті: " + counter);
-                    splitted_text = str.split(" ");
+                    splittedText = str.split(" ");
                     System.out.print("Слова які починаються з приголосної букви: ");
-                    for (String word: splitted_text) {
-                        if(Pattern.matches("[^(aoeiu[0-9])]", String.valueOf(word.toLowerCase(Locale.ROOT).charAt(0))))
+
+                    for (String word: splittedText) {
+                        if (Pattern.matches("[^(aoeiu[0-9])]",
+                                String.valueOf(word.toLowerCase(Locale.ROOT).charAt(0)))) {
                             strings.add(word.trim());
+                        }
                     }
+
                     System.out.println(strings);
                     break;
                 case 2:
@@ -46,8 +49,9 @@ public class Lab_2_ex_1 {
                 default:
                     continue;
             }
-            if(flag)
+            if (flag) {
                 break;
+            }
         }
     }
 }
