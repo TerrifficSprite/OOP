@@ -1,9 +1,9 @@
 package lab_1;
-import library.MyLibrary;
+import library.MyUtils;
 import java.util.Random;
 
 public class Ex_4 {
-    static MyLibrary lib = new MyLibrary();
+    static MyUtils lib = new MyUtils();
     private static void print_arr(int[][] array, int m, int n, String text) {
         System.out.println(text);
         for (int i = 0; i < m; i++) {
@@ -15,9 +15,9 @@ public class Ex_4 {
                     if(Integer.toString(temp).length() == 1)
                         System.out.print("  " + temp);
                     else if(Integer.toString(temp).length() == 2)
-                    System.out.print(" " + temp);
+                        System.out.print(" " + temp);
                     else
-                    System.out.print(temp);
+                        System.out.print(temp);
                 }
                 else
                     System.out.print(array[i][j] + "   \t");

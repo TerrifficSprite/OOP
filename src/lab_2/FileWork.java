@@ -2,19 +2,19 @@ package lab_2;
 
 import java.io.*;
 
-public class FileWork {
+public final class FileWork {
 
-    static String[] readFromFile(String path) throws IOException {
+    private FileWork() {
+        throw new IllegalStateException("Це допоміжний класс");
+    }
 
-        BufferedReader reader;
-        try {
-            reader = new BufferedReader(new FileReader(path));
+    public static String[] readFromFile(String path) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String str;
             String[] array = null;
             while ((str = reader.readLine()) != null) {
                 array = str.split("");
             }
-            reader.close();
             return array;
         } catch (FileNotFoundException e) {
             System.out.println("Файлу не існує, файл створено!");
@@ -25,7 +25,6 @@ public class FileWork {
         } catch (NullPointerException exn) {
             System.out.println("Файл пустий!");
         }
-        return null;
+        return new String[0];
     }
-
 }

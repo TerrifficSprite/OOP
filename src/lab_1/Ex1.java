@@ -1,11 +1,11 @@
 package lab_1;
-import library.MyLibrary;
+import library.MyUtils;
 public class Ex1 {
 
     public static void main(String[] args) {
 
         while (true) {
-            int menuChoice = MyLibrary.soutMenu("""
+            int menuChoice = MyUtils.soutMenu("""
                 ************************
                 \t\tМеню
                 Перейти до обчислень - 1
@@ -16,7 +16,7 @@ public class Ex1 {
                 continue;
             }
             /* Початок обчислень */
-            switch (MyLibrary.getNumFromKeyboard("Введіть номер студента: ")) {
+            switch (MyUtils.getNumFromKeyboard("Введіть номер студента: ")) {
                 case 1 -> System.out.println("Беліч Олександр");
                 case 2 -> System.out.println("Глинський Петро");
                 case 3 -> System.out.println("Григоращук Олександр");

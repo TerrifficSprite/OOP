@@ -1,9 +1,9 @@
-package lab_1;import library.MyLibrary;
+package lab_1;import library.MyUtils;
 
 public class Ex_2 {
     private static final int MIN = 1, MAX = 6;
     private static final float DX = 0.2f;
-    static MyLibrary lib = new MyLibrary();
+    static MyUtils lib = new MyUtils();
 
     public static void calculateWhileMethod(int min, int max, float step) {
         float cur = min;

@@ -1,12 +1,12 @@
 package lab_2;
-import library.MyLibrary;
+import library.MyUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class Lab2Ex1 extends FileWork {
+public class Lab2Ex1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class Lab2Ex1 extends FileWork {
 
         while (true) {
             List<String> strings = new ArrayList<>();
-            int choice = MyLibrary.soutMenu("""
+            int choice = MyUtils.soutMenu("""
                     ************************
                     \t\tМеню
                     Перейти до обчислень - 1

@@ -1,5 +1,5 @@
 package lab_2;
-import library.MyLibrary;
+import library.MyUtils;
 import java.io.*;
 import java.util.Locale;
 
@@ -9,7 +9,7 @@ public class Lab2Ex3 {
         boolean flag = false;
 
         while (true) {
-            int choice = MyLibrary.soutMenu("""
+            int choice = MyUtils.soutMenu("""
                     ************************
                     \t\tМеню
                     Перейти до обчислень - 1

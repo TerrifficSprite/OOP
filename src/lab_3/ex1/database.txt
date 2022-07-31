@@ -1,0 +1,11 @@
+author1, Програмування Java, publisher1, 2000
+author2, Програмуванн Java, publisher2, 2010
+author3, Програми на C#, publisher3, 1998
+author4, Просто книжка, publisher4, 2003
+author5, програмування, publisher5, 2001
+author6, Програмування на С#, publisher6, 2010
+author7, Англійська мова, publisher7, 2009
+author8, Книжка про програмування, publisher8, 1999
+author9, Програмування Java, publisher9, 1979
+author10, Програмування, publisher10, 2222
+author11, Програмування для новачків, publisher11, 2015

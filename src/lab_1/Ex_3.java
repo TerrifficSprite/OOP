@@ -1,10 +1,10 @@
 package lab_1;
-import library.MyLibrary;
+import library.MyUtils;
 import java.util.Arrays;
 import java.util.Random;
 
 public class Ex_3 {
-    private static MyLibrary lib = new MyLibrary();
+    private static MyUtils lib = new MyUtils();
     private static Random random = new Random();
     private static int MIN = -100, MAX = 100;
     public static int[] getNumbersFromKeyboard(int length) {
@@ -73,7 +73,7 @@ public class Ex_3 {
                 continue;
             /* Початок обчислень */
             System.out.println("Готовий масив: " + Arrays.toString(array));
-            System.out.println("Максимальний елемент масиву: " + Arrays.stream(array).max().getAsInt());
+            System.out.println("Максимальний елемент масиву: " + array[array.length-1]);
             if(sumBeetweenPositiveNums(array) <= 0)
                 System.out.println("Cумa елементів масиву, розташованих між першим й другим додатними елементами: "
                         + sumBeetweenPositiveNums(array));

@@ -1,5 +1,5 @@
 package lab_2;
-import library.MyLibrary;
+import library.MyUtils;
 import java.io.*;
 import java.util.Arrays;
 import java.util.regex.Pattern;
@@ -16,7 +16,7 @@ public class Lab2Ex2 {
             int i = 0;
             int o = 0;
             int a = 0;
-            int choice = MyLibrary.soutMenu("""
+            int choice = MyUtils.soutMenu("""
                     ************************
                     \t\tМеню
                     Перейти до обчислень - 1
